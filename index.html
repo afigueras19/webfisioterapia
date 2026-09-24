@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alex Figueras Ruiz | Fisioterapia Especializada en Artrosis de Cadera</title>
-  <meta name="description" content="Fisioterapeuta Colegiado Nº 19.190 especialista en el tratamiento activo y online de la artrosis de cadera, lesiones de labrum y dolor articular.">
+  <meta name="description" content="Fisioterapeuta Colegiado Nº 19.190 especialista en el tratamiento activo y online de la artrosis de cadera (coxartrosis). Recupera tu movilidad y calidad de vida sin salir de casa.">
 
-  <!-- Favicon con respaldo automático -->
+  <!-- Favicon e Iconos -->
   <link rel="icon" type="image/png" href="logo.png" onerror="this.href='logo.png.png'">
   <link rel="apple-touch-icon" href="favicon.png" onerror="this.href='favicon.png.png'">
 
@@ -18,220 +18,180 @@
         extend: {
           colors: {
             brand: {
-              50: '#f0fdf4',
-              100: '#dcfce7',
-              200: '#bbf7d0',
-              300: '#86efac',
-              400: '#4ade80',
-              500: '#22c55e',
-              600: '#16a34a',
-              700: '#15803d',
-              800: '#166534',
-              900: '#14532d',
+              50: '#f0f7ff',
+              100: '#e0effe',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              800: '#0c4a6e',
+              900: '#082f49'
             }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif']
           }
         }
       }
     }
   </script>
 
-  <!-- Lucide Icons -->
+  <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- Schema.org Datos Estructurados para IA y Google -->
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Schema.org JSON-LD para SEO y Modelos de IA -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Physician",
     "name": "Alex Figueras Ruiz",
-    "jobTitle": "Fisioterapeuta Especialista en Cadera",
-    "identifier": "19190",
     "medicalSpecialty": "Physiotherapy",
-    "description": "Fisioterapia online especializada en artrosis de cadera, choque femoroacetabular, lesiones de labrum y trocanteritis.",
-    "telephone": "+34601170526",
-    "areaServed": "España",
+    "description": "Fisioterapeuta colegiado nº 19.190 especialista en artrosis de cadera y tratamiento activo online.",
+    "telephone": "+34633758117",
+    "url": "https://alexfiguerasfisio.com",
     "availableService": {
       "@type": "MedicalTherapy",
-      "name": "Programa Online de Readaptación para Artrosis de Cadera"
+      "name": "Programa Artrosis Vital (PAV)",
+      "description": "Programa online de fisioterapia y ejercicio terapéutico individualizado para el tratamiento de la artrosis de cadera."
     }
   }
   </script>
 </head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
 
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-100 selection:text-brand-900 font-sans">
+  <!-- Encabezado / Barra Superior -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between">
+      
+      <!-- Logotipo y Nombre Profesional -->
+      <a href="#inicio" class="flex items-center gap-3 sm:gap-4 group focus:outline-none">
+        <div class="relative w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center rounded-2xl bg-brand-50 border border-brand-100/80 shadow-inner group-hover:scale-105 transition-transform duration-300">
+          <img src="logo.png" alt="Logo Alex Figueras" class="w-full h-full object-contain p-1.5" onerror="this.onerror=null; this.src='logo.png.png'; this.parentElement.innerHTML='<div class=\'w-full h-full flex items-center justify-center text-brand-600 font-extrabold text-2xl tracking-tighter\'>AF</div>';">
+        </div>
+        <div class="pr-2">
+          <span class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight block leading-none">Alex Figueras</span>
+          <span class="text-xs sm:text-base font-bold text-brand-600 tracking-wide block mt-1.5">FISIOTERAPIA DE CADERA</span>
+          <span class="text-[11px] sm:text-xs text-slate-500 font-semibold uppercase tracking-wider block mt-0.5">Col. 19.190 | Artrosis Vital</span>
+        </div>
+      </a>
 
-  <!-- Header / Barra de Navegación Limpia (Sin botones de carga) -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200/80 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-20 sm:h-24">
-        
-        <!-- Logotipo Oficial sin botones de carga -->
-        <a href="#inicio" class="flex items-center gap-3 group">
-          <img 
-            src="logo.png" 
-            alt="Alex Figueras Ruiz - Fisioterapia y Especialista en Cadera" 
-            class="h-14 sm:h-16 md:h-18 w-auto object-contain transition-transform group-hover:scale-[1.02]"
-            onerror="if (!this.dataset.backupTried) { this.dataset.backupTried = 'true'; this.src = 'logo.png.png'; } else { const fallback = document.getElementById('navbar-fallback-brand'); if(fallback) fallback.classList.remove('hidden'); this.classList.add('hidden'); }"
-          >
-          <div id="navbar-fallback-brand" class="hidden flex items-center gap-2.5">
-            <div class="bg-brand-600 text-white p-2.5 rounded-xl shadow-md">
-              <i data-lucide="activity" class="w-6 h-6"></i>
-            </div>
-            <div>
-              <span class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight block leading-none">Alex Figueras</span>
-              <span class="text-xs sm:text-sm font-bold text-brand-600 uppercase tracking-wide">Fisioterapia de Cadera</span>
-            </div>
-          </div>
+      <!-- Menú de Navegación Escritorio -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#inicio" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Inicio</a>
+        <a href="#artrosis" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Programa Artrosis Vital</a>
+        <a href="#sobre-mi" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Sobre Mí</a>
+        <a href="#faq" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Preguntas Frecuentes</a>
+        <a href="https://wa.me/34633758117?text=Hola%20Alex,%20quiero%20información%20sobre%20el%20Programa%20Artrosis%20Vital" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-semibold px-5 py-2.5 rounded-xl shadow-md shadow-brand-600/20 transition-all hover:scale-[1.02] active:scale-[0.98]">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Consultar por WhatsApp</span>
         </a>
+      </nav>
 
-        <!-- Menú Navegación Escritorio -->
-        <nav class="hidden lg:flex items-center gap-7">
-          <a href="#inicio" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Inicio</a>
-          <a href="#artrosis" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Programa Artrosis</a>
-          <a href="#guia-clinica" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Evidencia Clínica</a>
-          <a href="#metodo" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Método Online</a>
-          <a href="#sobre-mi" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Sobre Mí</a>
-          <a href="#faq" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Preguntas</a>
-        </nav>
-
-        <!-- CTA WhatsApp Principal -->
-        <div class="hidden sm:flex items-center">
-          <a 
-            href="https://wa.me/34601170526?text=Hola%20Alex,%20tengo%20molestias%20en%20la%20cadera%20y%20quisiera%20recibir%20informaci%C3%B3n%20sobre%20el%20tratamiento%20online." 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="inline-flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm px-5 py-2.5 rounded-xl shadow-sm hover:shadow transition-all duration-200"
-          >
-            <i data-lucide="message-square" class="w-4 h-4"></i>
-            <span>Consultar por WhatsApp</span>
-          </a>
-        </div>
-
-        <!-- Botón Menú Móvil -->
-        <div class="lg:hidden flex items-center">
-          <button id="mobile-toggle" aria-label="Abrir Menú" class="p-2.5 rounded-xl text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none">
-            <i data-lucide="menu" class="w-6 h-6"></i>
-          </button>
-        </div>
-
-      </div>
+      <!-- Botón Menú Móvil -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-xl text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:outline-none" aria-label="Abrir menú">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
     </div>
 
-    <!-- Menú Desplegable Móvil -->
-    <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-5 pt-3 pb-6 space-y-3">
-      <a href="#inicio" class="block py-2 text-slate-700 font-semibold hover:text-brand-600">Inicio</a>
-      <a href="#artrosis" class="block py-2 text-slate-700 font-semibold hover:text-brand-600">Programa Artrosis</a>
-      <a href="#guia-clinica" class="block py-2 text-slate-700 font-semibold hover:text-brand-600">Evidencia Clínica</a>
-      <a href="#metodo" class="block py-2 text-slate-700 font-semibold hover:text-brand-600">Método Online</a>
-      <a href="#sobre-mi" class="block py-2 text-slate-700 font-semibold hover:text-brand-600">Sobre Mí</a>
-      <a href="#faq" class="block py-2 text-slate-700 font-semibold hover:text-brand-600">Preguntas Frecuentes</a>
-      <a 
-        href="https://wa.me/34601170526?text=Hola%20Alex,%20tengo%20molestias%20en%20la%20cadera%20y%20quisiera%20recibir%20informaci%C3%B3n%20sobre%20el%20tratamiento%20online." 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3 rounded-xl shadow-sm transition-all"
-      >
-        <i data-lucide="message-square" class="w-4 h-4"></i>
-        <span>Contactar por WhatsApp</span>
+    <!-- Menú Móvil Desplegable -->
+    <div id="mobile-menu" class="hidden md:hidden border-b border-slate-200 bg-white px-4 pt-3 pb-6 space-y-3">
+      <a href="#inicio" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-600">Inicio</a>
+      <a href="#artrosis" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-600">Programa Artrosis Vital</a>
+      <a href="#sobre-mi" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-600">Sobre Mí</a>
+      <a href="#faq" class="block py-2 text-base font-medium text-slate-700 hover:text-brand-600">Preguntas Frecuentes</a>
+      <a href="https://wa.me/34633758117?text=Hola%20Alex,%20quiero%20información%20sobre%20el%20Programa%20Artrosis%20Vital" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-2 w-full bg-brand-600 text-white font-semibold py-3 rounded-xl shadow-md">
+        <i data-lucide="message-circle" class="w-5 h-5"></i>
+        <span>Consultar por WhatsApp</span>
       </a>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="inicio" class="py-16 sm:py-24 bg-gradient-to-b from-brand-50/60 to-slate-50 border-b border-slate-200/60">
+  <!-- Sección Hero / Inicio -->
+  <section id="inicio" class="relative pt-12 pb-20 md:py-28 overflow-hidden bg-gradient-to-b from-white via-brand-50/40 to-slate-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid lg:grid-cols-12 gap-12 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         
         <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100 text-brand-800 text-xs font-bold tracking-wide uppercase">
-            <i data-lucide="shield-check" class="w-4 h-4 text-brand-700"></i>
-            <span>Fisioterapia Online Especializada • Col. Nº 19.190</span>
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-100 text-brand-800 text-xs sm:text-sm font-semibold">
+            <i data-lucide="shield-check" class="w-4 h-4 text-brand-600"></i>
+            <span>Fisioterapia Online Basada en Evidencia | Col. 19.190</span>
           </div>
 
-          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
-            Recupera tu movilidad y alivia la <span class="text-brand-600">artrosis de cadera</span> sin depender de la cirugía
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.15]">
+            Recupera la movilidad de tu cadera <span class="text-brand-600 underline decoration-brand-200 decoration-wavy decoration-2">sin resignarte al dolor</span>.
           </h1>
 
-          <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-            Abordaje clínico conservador basado en ejercicio terapéutico supervisado. Tratamiento activo y personalizado para reducir el dolor articular, recuperar tu fuerza y volver a caminar con seguridad desde casa.
+          <p class="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            Acompañamiento especializado para personas con <strong class="text-slate-900">artrosis de cadera</strong>. Un método guiado paso a paso para fortalecer tu articulación, calmar las molestias y volver a caminar con total seguridad desde tu propia casa.
           </p>
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
-            <a 
-              href="https://wa.me/34601170526?text=Hola%20Alex,%20quiero%20solicitar%20mi%20primera%20valoraci%C3%B3n%20para%20artrosis%20de%20cadera." 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              class="inline-flex items-center justify-center gap-3 bg-brand-600 hover:bg-brand-700 text-white font-bold px-7 py-3.5 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-0.5 text-base"
-            >
-              <i data-lucide="calendar-check" class="w-5 h-5"></i>
+            <a href="https://wa.me/34633758117?text=Hola%20Alex,%20quiero%20información%20sobre%20el%20Programa%20Artrosis%20Vital" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-brand-600 hover:bg-brand-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-brand-600/30 transition-all hover:-translate-y-0.5">
+              <i data-lucide="calendar" class="w-5 h-5"></i>
               <span>Solicitar Valoración Inicial</span>
             </a>
-            <a 
-              href="#artrosis" 
-              class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-700 font-semibold px-6 py-3.5 rounded-xl border border-slate-300 shadow-sm transition-all"
-            >
+            <a href="#artrosis" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-700 font-semibold px-6 py-4 rounded-xl border border-slate-200 shadow-sm transition-colors">
               <span>Conocer el Programa</span>
-              <i data-lucide="chevron-down" class="w-4 h-4"></i>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </a>
           </div>
 
-          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-200/80">
-            <div>
-              <p class="text-2xl font-bold text-slate-900">100%</p>
-              <p class="text-xs text-slate-500 font-medium">Personalizado</p>
+          <div class="pt-4 flex items-center justify-center lg:justify-start gap-6 text-sm text-slate-500 font-medium">
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i>
+              <span>Atención 1 a 1</span>
             </div>
-            <div>
-              <p class="text-2xl font-bold text-slate-900">+Científico</p>
-              <p class="text-xs text-slate-500 font-medium">Evidencia Clínica</p>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i>
+              <span>Sin desplazamientos</span>
             </div>
-            <div>
-              <p class="text-2xl font-bold text-slate-900">Directo</p>
-              <p class="text-xs text-slate-500 font-medium">Soporte Continuo</p>
+            <div class="flex items-center gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i>
+              <span>Revisión semanal</span>
             </div>
           </div>
         </div>
 
+        <!-- Tarjeta Visual Destacada -->
         <div class="lg:col-span-5">
-          <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-100 relative">
+          <div class="relative mx-auto max-w-md bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-100">
             <div class="absolute -top-3 -right-3 bg-emerald-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-md">
-              Atención Online
+              MÉTODO CONSERVADOR
             </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-              <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-600"></i>
-              ¿A quién está dirigido?
-            </h3>
-            <ul class="space-y-3.5 text-slate-600 text-sm">
-              <li class="flex items-start gap-3">
-                <i data-lucide="check" class="w-4 h-4 text-brand-600 shrink-0 mt-0.5"></i>
-                <span>Personas con diagnóstico de <strong>artrosis de cadera (coxartrosis)</strong> leve, moderada o avanzada.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <i data-lucide="check" class="w-4 h-4 text-brand-600 shrink-0 mt-0.5"></i>
-                <span>Pacientes con <strong>dolor al caminar, subir escaleras o levantarse</strong> de la silla.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <i data-lucide="check" class="w-4 h-4 text-brand-600 shrink-0 mt-0.5"></i>
-                <span>Personas con <strong>lesión o rotura de labrum</strong> y pinzamiento femoroacetabular.</span>
-              </li>
-              <li class="flex items-start gap-3">
-                <i data-lucide="check" class="w-4 h-4 text-brand-600 shrink-0 mt-0.5"></i>
-                <span>Aquellos que buscan <strong>evitar o retrasar la prótesis</strong> manteniendo su autonomía articular.</span>
-              </li>
-            </ul>
-
-            <div class="mt-6 pt-5 border-t border-slate-100 flex items-center justify-between">
-              <div>
-                <p class="text-xs text-slate-500">¿Tienes dudas sobre tu caso?</p>
-                <p class="text-sm font-bold text-slate-900">Escríbeme sin compromiso</p>
+            <div class="flex items-center gap-4 border-b border-slate-100 pb-5">
+              <div class="w-14 h-14 rounded-2xl bg-brand-600 text-white flex items-center justify-center font-bold text-xl shadow-md shadow-brand-600/30">
+                PAV
               </div>
-              <a 
-                href="https://wa.me/34601170526" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                class="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-bold p-2.5 rounded-xl transition-colors"
-                aria-label="Abrir WhatsApp"
-              >
-                <i data-lucide="send" class="w-5 h-5"></i>
+              <div>
+                <h2 class="text-xl font-bold text-slate-900">Programa Artrosis Vital</h2>
+                <p class="text-xs text-slate-500">Readaptación activa de la cadera</p>
+              </div>
+            </div>
+
+            <div class="mt-6 space-y-4">
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex items-start gap-3">
+                <i data-lucide="activity" class="w-5 h-5 text-brand-600 shrink-0 mt-0.5"></i>
+                <p class="text-sm text-slate-700"><strong>Dosis precisa de movimiento:</strong> Ejercicios terapéuticos adaptados a la capacidad real de tu cartílago articular.</p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex items-start gap-3">
+                <i data-lucide="video" class="w-5 h-5 text-brand-600 shrink-0 mt-0.5"></i>
+                <p class="text-sm text-slate-700"><strong>Videoconsultas individuales:</strong> Evaluación funcional continua y corrección técnica al milímetro.</p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-100 flex items-start gap-3">
+                <i data-lucide="message-square" class="w-5 h-5 text-brand-600 shrink-0 mt-0.5"></i>
+                <p class="text-sm text-slate-700"><strong>Contacto directo diario:</strong> Para resolver cualquier duda o molestia imprevista al instante.</p>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-5 border-t border-slate-100 text-center">
+              <a href="https://wa.me/34633758117?text=Hola%20Alex,%20quiero%20información%20sobre%20el%20Programa%20Artrosis%20Vital" target="_blank" rel="noopener noreferrer" class="block w-full py-3 bg-brand-50 hover:bg-brand-100 text-brand-700 font-bold rounded-xl transition-colors">
+                Hablar directamente conmigo
               </a>
             </div>
           </div>
@@ -241,267 +201,229 @@
     </div>
   </section>
 
-  <!-- Programa Artrosis Vital -->
-  <section id="artrosis" class="py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-xs font-bold text-brand-600 uppercase tracking-widest mb-2">Servicio Especializado</h2>
-        <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">Programa Artrosis Vital</p>
-        <p class="mt-4 text-slate-600 leading-relaxed">
-          Diseñado a partir de las principales recomendaciones internacionales (OARSI, NICE) para el abordaje de la coxartrosis: ejercicio activo, dosificación de carga y acompañamiento experto.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-500/50 hover:shadow-lg transition-all">
-          <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center mb-6">
-            <i data-lucide="video" class="w-6 h-6"></i>
-          </div>
-          <h3 class="text-xl font-bold text-slate-900 mb-3">1. Valoración Clínica</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">
-            Sesión inicial individualizada por videollamada para evaluar tus pruebas de imagen (radiografías/resonancias), arcos articulares y limitaciones cotidianas.
-          </p>
-        </div>
-
-        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-500/50 hover:shadow-lg transition-all">
-          <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center mb-6">
-            <i data-lucide="dumbbell" class="w-6 h-6"></i>
-          </div>
-          <h3 class="text-xl font-bold text-slate-900 mb-3">2. Ejercicio Terapéutico</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">
-            Rutinas guiadas en vídeo con dosis exacta de carga progresiva para glúteos, musculatura estabilizadora y pelvis, diseñadas para realizar sin equipamiento costoso.
-          </p>
-        </div>
-
-        <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-brand-500/50 hover:shadow-lg transition-all">
-          <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center mb-6">
-            <i data-lucide="message-circle" class="w-6 h-6"></i>
-          </div>
-          <h3 class="text-xl font-bold text-slate-900 mb-3">3. Soporte Continuo</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">
-            Acompañamiento directo vía WhatsApp para resolver dudas sobre sensaciones o molestias, corregir posturas mediante vídeo y ajustar la dificultad semanalmente.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Evidencia Clínica / Claves Artrosis (GEO / SEO Semántico) -->
-  <section id="guia-clinica" class="py-20 bg-slate-50 border-t border-slate-200/80">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-16">
-        <h2 class="text-xs font-bold text-brand-600 uppercase tracking-widest mb-2">Educación y Ciencia</h2>
-        <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">Lo que la ciencia dice sobre la cadera</p>
-        <p class="mt-4 text-slate-600 leading-relaxed">
-          Información transparente para desmentir mitos frecuentes sobre el cartílago articular y el tratamiento conservador.
-        </p>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-white p-7 rounded-2xl shadow-sm border border-slate-200">
-          <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-start gap-2.5">
-            <i data-lucide="help-circle" class="w-5 h-5 text-brand-600 shrink-0 mt-0.5"></i>
-            ¿El ejercicio desgasta más el cartílago de la cadera?
-          </h3>
-          <p class="text-slate-600 text-sm leading-relaxed">
-            No. El cartílago articular es un tejido avascular que se nutre a través de la compresión y descompresión generada por el movimiento. El reposo prolongado atrofia la musculatura protectora, mientras que el ejercicio adaptado estimula la producción de líquido sinovial.
-          </p>
-        </div>
-
-        <div class="bg-white p-7 rounded-2xl shadow-sm border border-slate-200">
-          <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-start gap-2.5">
-            <i data-lucide="help-circle" class="w-5 h-5 text-brand-600 shrink-0 mt-0.5"></i>
-            ¿Se puede tratar la cadera de forma 100% online?
-          </h3>
-          <p class="text-slate-600 text-sm leading-relaxed">
-            Sí. Las guías clínicas internacionales sitúan el ejercicio terapéutico supervisado y la educación sobre el dolor por encima de las terapias pasivas. El tratamiento online permite monitorizar tu progreso en tu entorno real de movimiento.
-          </p>
-        </div>
-
-        <div class="bg-white p-7 rounded-2xl shadow-sm border border-slate-200">
-          <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-start gap-2.5">
-            <i data-lucide="help-circle" class="w-5 h-5 text-brand-600 shrink-0 mt-0.5"></i>
-            ¿Cuál es la diferencia entre artrosis y trocanteritis?
-          </h3>
-          <p class="text-slate-600 text-sm leading-relaxed">
-            La artrosis es el proceso degenerativo intraarticular (dolor típicamente referido a la ingle o muslo anterior), mientras que la trocanteritis o síndrome de dolor trocantérico afecta a tendones y bursas en la parte lateral externa. Ambas requieren planes de carga activos diferenciados.
-          </p>
-        </div>
-
-        <div class="bg-white p-7 rounded-2xl shadow-sm border border-slate-200">
-          <h3 class="text-lg font-bold text-slate-900 mb-3 flex items-start gap-2.5">
-            <i data-lucide="help-circle" class="w-5 h-5 text-brand-600 shrink-0 mt-0.5"></i>
-            ¿Es posible retrasar o evitar la prótesis de cadera?
-          </h3>
-          <p class="text-slate-600 text-sm leading-relaxed">
-            En un alto porcentaje de pacientes con artrosis moderada, fortalecer la musculatura pelvitrocantérea y mejorar la biomecánica de la marcha alivia el dolor hasta niveles tolerables, permitiendo postergar o evitar la intervención quirúrgica.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección Sobre Mí (Autoridad y Humanización) -->
-  <section id="sobre-mi" class="py-20 bg-slate-900 text-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl mx-auto space-y-6">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/20 text-brand-400 text-xs font-semibold tracking-wider uppercase">
-          Fisioterapeuta Colegiado Nº 19.190
-        </div>
-
-        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
-          Sobre Alex Figueras Ruiz
+  <!-- Sección: Programa Artrosis Vital (PAV) -->
+  <section id="artrosis" class="py-20 md:py-28 bg-white border-y border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center space-y-4">
+        <span class="inline-block text-xs uppercase tracking-widest font-extrabold text-brand-600 bg-brand-50 px-3 py-1 rounded-full border border-brand-100">
+          Enfoque Clínico Especializado
+        </span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          Tener artrosis no significa que tu cadera tenga fecha de caducidad.
         </h2>
+      </div>
 
-        <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
-          Mi labor clínica se centra en ayudar a personas con dolor articular y artrosis de cadera a recuperar la confianza en su cuerpo. Sé que el diagnóstico de artrosis genera temor a la inactividad o a una cirugía inminente; mi propósito es proporcionarte las herramientas activas y el seguimiento necesario para que mantengas tu estilo de vida.
+      <!-- Texto Principal del Programa -->
+      <div class="mt-10 bg-slate-50 p-8 sm:p-12 rounded-3xl border border-slate-200 shadow-sm space-y-6 text-base sm:text-lg text-slate-700 leading-relaxed">
+        <p>
+          Durante mucho tiempo nos han hecho creer que el desgaste articular solo tiene un camino: <strong>reposo, resignación y esperar a que el dolor decida por ti</strong>.
         </p>
+        <p>
+          Pero la evidencia científica nos muestra exactamente lo contrario. Tu articulación no necesita que la dejes quieta; <strong>necesita estímulo, fuerza y un plan adaptado a su ritmo real</strong>.
+        </p>
+        
+        <div class="p-5 sm:p-6 bg-brand-600 text-white rounded-2xl shadow-md">
+          <p class="font-bold text-lg sm:text-xl">
+            Por eso nace el Programa Artrosis Vital (PAV).
+          </p>
+          <p class="mt-1 text-brand-100 text-sm sm:text-base">
+            No es una tabla genérica de ejercicios ni una solución milagro. Es un programa online con seguimiento semanal para:
+          </p>
+        </div>
 
-        <div class="grid sm:grid-cols-2 gap-4 pt-4 border-t border-slate-700/80 text-sm">
-          <div class="flex items-center gap-3">
-            <i data-lucide="check-circle" class="w-5 h-5 text-brand-400 shrink-0"></i>
-            <span class="text-slate-200">Enfoque clínico basado en ejercicio activo</span>
+        <!-- 3 Puntos Clave del Programa -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 pt-2">
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-start">
+            <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center font-bold mb-3">
+              <i data-lucide="sun" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-bold text-slate-900 mb-2">Aliviar la rigidez matutina</h3>
+            <p class="text-sm text-slate-600">Calmar el dolor al ponerte en pie o durante tus primeros pasos al caminar.</p>
           </div>
-          <div class="flex items-center gap-3">
-            <i data-lucide="check-circle" class="w-5 h-5 text-brand-400 shrink-0"></i>
-            <span class="text-slate-200">Educación en dolor y desensibilización</span>
+
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-start">
+            <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center font-bold mb-3">
+              <i data-lucide="shield" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-bold text-slate-900 mb-2">Ganar fuerza y estabilidad</h3>
+            <p class="text-sm text-slate-600">Hacer que tu musculatura profunda proteja y descargue la articulación.</p>
           </div>
-          <div class="flex items-center gap-3">
-            <i data-lucide="check-circle" class="w-5 h-5 text-brand-400 shrink-0"></i>
-            <span class="text-slate-200">Acompañamiento individualizado continuo</span>
-          </div>
-          <div class="flex items-center gap-3">
-            <i data-lucide="check-circle" class="w-5 h-5 text-brand-400 shrink-0"></i>
-            <span class="text-slate-200">Atención profesional en toda España</span>
+
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-start">
+            <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center font-bold mb-3">
+              <i data-lucide="heart-pulse" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-bold text-slate-900 mb-2">Recuperar tu seguridad</h3>
+            <p class="text-sm text-slate-600">Moverte con confianza en tu día a día, sin el miedo constante a dañar tu cadera.</p>
           </div>
         </div>
 
-        <div class="pt-4">
-          <a 
-            href="https://wa.me/34601170526" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-xl transition-all shadow-md"
-          >
-            <i data-lucide="message-square" class="w-4 h-4"></i>
-            <span>Hablar directamente conmigo</span>
+        <!-- Botón de Acción -->
+        <div class="pt-6 text-center">
+          <a href="https://wa.me/34633758117?text=Hola%20Alex,%20estoy%20interesado%20en%20el%20Programa%20Artrosis%20Vital" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 bg-brand-600 hover:bg-brand-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-brand-600/20 transition-all hover:scale-[1.02]">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            <span>Pedir información sobre el Programa Vital</span>
           </a>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- FAQ Adicional -->
-  <section id="faq" class="py-20 bg-white">
+  <!-- Sección: Sobre Mí -->
+  <section id="sobre-mi" class="py-20 md:py-28 bg-slate-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+        
+        <div class="md:col-span-5 text-center">
+          <div class="relative inline-block">
+            <div class="w-48 h-48 sm:w-56 sm:h-56 mx-auto rounded-3xl bg-brand-100 border-4 border-white shadow-xl flex items-center justify-center text-brand-700 font-extrabold text-5xl">
+              AF
+            </div>
+            <div class="mt-4">
+              <h3 class="text-2xl font-bold text-slate-900">Alex Figueras Ruiz</h3>
+              <p class="text-sm font-semibold text-brand-600">Fisioterapeuta Colegiado Nº 19.190</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:col-span-7 space-y-5 text-slate-700 leading-relaxed">
+          <div class="inline-flex items-center gap-2 text-xs font-bold text-brand-700 bg-brand-100/70 px-3 py-1 rounded-full uppercase tracking-wider">
+            Compromiso y Rigor Clínico
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Fisioterapia pensada para devolverte la autonomía.
+          </h2>
+          <p>
+            Como fisioterapeuta especializado en patología articular de cadera, mi misión es desmitificar la idea de que ante la artrosis la única opción es frenar tu vida y resignarte a la pérdida de movilidad.
+          </p>
+          <p>
+            Trabajo con un modelo online individualizado porque me permite entrar en tu día a día, entender las demandas específicas de tu entorno y guiarte con exactitud en cada repetición. No vendo soluciones milagro: te ofrezco un proceso guiado, honesto y sustentado en la evidencia científica.
+          </p>
+          
+          <div class="pt-2 flex flex-wrap gap-3">
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-slate-700">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Ejercicio Terapéutico
+            </span>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-slate-700">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Educación en Neurociencia del Dolor
+            </span>
+            <span class="inline-flex items-center gap-1.5 text-xs font-semibold bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-slate-700">
+              <i data-lucide="check" class="w-3.5 h-3.5 text-brand-600"></i> Readaptación Funcional
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección: Preguntas Frecuentes (FAQ) -->
+  <section id="faq" class="py-20 md:py-28 bg-white border-t border-slate-200">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-12">
-        <h2 class="text-xs font-bold text-brand-600 uppercase tracking-widest mb-2">Preguntas Frecuentes</h2>
-        <p class="text-3xl font-extrabold text-slate-900">Respuestas a dudas comunes</p>
+      
+      <div class="text-center space-y-3 mb-12">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          Preguntas Frecuentes
+        </h2>
+        <p class="text-slate-600">
+          Respuestas claras sobre el abordaje online de la artrosis de cadera.
+        </p>
       </div>
 
       <div class="space-y-4">
-        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm">
-          <h3 class="text-base font-bold text-slate-900 mb-2">¿Cómo se realiza la valoración inicial online?</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">
-            Coordinamos una videollamada de 45-60 minutos. Analizamos tus informes médicos, te realizo una entrevista exhaustiva y comprobamos tests de movimiento funcional ante la cámara para diseñar tu programación a medida.
+        <!-- FAQ 1 -->
+        <details class="group bg-slate-50 border border-slate-200 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-lg text-slate-900">
+            <span>¿De verdad funciona la fisioterapia online para la artrosis?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <p class="mt-4 text-slate-600 leading-relaxed">
+            Sí. Las principales guías clínicas internacionales demuestran que el tratamiento de primera línea para la artrosis de cadera no son los masajes pasivos, sino el ejercicio terapéutico dosificado y la educación sobre el movimiento. A través de videoconsultas analizamos tu postura, corregimos cada ejercicio y monitoreamos tu progreso con total precisión.
           </p>
-        </div>
+        </details>
 
-        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm">
-          <h3 class="text-base font-bold text-slate-900 mb-2">¿Necesito material de gimnasio en mi casa?</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">
-            No es obligatorio. La mayoría de ejercicios se inician con el propio peso corporal o elementos domésticos. Más adelante, solemos incorporar bandas elásticas de bajo coste para progresar en fuerza.
+        <!-- FAQ 2 -->
+        <details class="group bg-slate-50 border border-slate-200 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-lg text-slate-900">
+            <span>¿Necesito material especial o ir al gimnasio?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <p class="mt-4 text-slate-600 leading-relaxed">
+            No. Todo el plan se diseña teniendo en cuenta lo que tienes en casa. Solemos empezar con el peso de tu propio cuerpo, sillas y toallas, y cuando sea necesario podemos sumar gomas elásticas básicas.
           </p>
-        </div>
+        </details>
 
-        <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm">
-          <h3 class="text-base font-bold text-slate-900 mb-2">¿Y si siento molestias al hacer un ejercicio?</h3>
-          <p class="text-slate-600 text-sm leading-relaxed">
-            Dispones de canal abierto por WhatsApp para escribir en cualquier momento. Modificamos el rango o la carga inmediatamente para garantizar que el entrenamiento sea siempre cómodo y seguro.
+        <!-- FAQ 3 -->
+        <details class="group bg-slate-50 border border-slate-200 rounded-2xl p-6 [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center justify-between cursor-pointer font-bold text-lg text-slate-900">
+            <span>¿Qué ocurre si tengo una duda entre sesiones?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <p class="mt-4 text-slate-600 leading-relaxed">
+            Tienes acceso directo a mi contacto por WhatsApp para consultar cualquier molestia o duda técnica. No estás solo entre semana; revisamos tus sensaciones de manera constante.
           </p>
-        </div>
+        </details>
       </div>
+
     </div>
   </section>
 
-  <!-- Footer Limpio (Sin botones de carga) -->
-  <footer class="bg-slate-900 text-slate-300 py-16 border-t border-slate-800">
+  <!-- Pie de página (Footer) -->
+  <footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-3 gap-10">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
         
-        <!-- Bloque Marca Oficial -->
-        <div class="space-y-4">
-          <a href="#inicio" class="inline-block">
-            <img 
-              src="logo.png" 
-              alt="Alex Figueras Ruiz Logo" 
-              class="h-16 w-auto object-contain brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
-              onerror="if (!this.dataset.backupTried) { this.dataset.backupTried = 'true'; this.src = 'logo.png.png'; } else { const fb = document.getElementById('footer-fallback-brand'); if(fb) fb.classList.remove('hidden'); this.classList.add('hidden'); }"
-            >
-            <div id="footer-fallback-brand" class="hidden">
-              <span class="text-xl font-bold text-white tracking-tight block">Alex Figueras Ruiz</span>
-              <span class="text-xs font-semibold text-brand-400 uppercase">Fisioterapia de Cadera</span>
-            </div>
-          </a>
-          <p class="text-xs leading-relaxed text-slate-400">
-            Fisioterapeuta Colegiado Nº 19.190. Servicio especializado en el tratamiento conservador y readaptación funcional de patologías de cadera y artrosis.
+        <div class="md:col-span-6 space-y-4">
+          <span class="text-2xl font-bold text-white tracking-tight block">Alex Figueras</span>
+          <p class="text-sm text-slate-400 max-w-sm leading-relaxed">
+            Fisioterapia especializada en artrosis y abordaje activo de la cadera. Consulta y seguimiento 100% online adaptado a tu ritmo.
+          </p>
+          <p class="text-xs text-slate-500 font-medium">
+            Fisioterapeuta Colegiado Nº 19.190
           </p>
         </div>
 
-        <!-- Enlaces Rápidos -->
-        <div class="space-y-3">
-          <h4 class="text-sm font-semibold text-white uppercase tracking-wider">Enlaces</h4>
-          <ul class="space-y-2 text-xs">
+        <div class="md:col-span-3 space-y-3">
+          <h4 class="text-sm font-semibold uppercase tracking-wider text-slate-200">Navegación</h4>
+          <ul class="space-y-2 text-sm">
             <li><a href="#inicio" class="hover:text-white transition-colors">Inicio</a></li>
             <li><a href="#artrosis" class="hover:text-white transition-colors">Programa Artrosis Vital</a></li>
-            <li><a href="#guia-clinica" class="hover:text-white transition-colors">Evidencia Clínica</a></li>
             <li><a href="#sobre-mi" class="hover:text-white transition-colors">Sobre Mí</a></li>
             <li><a href="#faq" class="hover:text-white transition-colors">Preguntas Frecuentes</a></li>
           </ul>
         </div>
 
-        <!-- Contacto Directo -->
-        <div class="space-y-3">
-          <h4 class="text-sm font-semibold text-white uppercase tracking-wider">Contacto Profesional</h4>
-          <p class="text-xs text-slate-400">Atención personalizada y valoraciones clínicas online.</p>
-          <div class="pt-2">
-            <a 
-              href="https://wa.me/34601170526" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              class="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-semibold text-sm transition-colors"
-            >
-              <i data-lucide="phone" class="w-4 h-4"></i>
-              <span>+34 601 17 05 26 (WhatsApp)</span>
-            </a>
-          </div>
+        <div class="md:col-span-3 space-y-3">
+          <h4 class="text-sm font-semibold uppercase tracking-wider text-slate-200">Contacto Directo</h4>
+          <p class="text-sm text-slate-400">Atención personalizada vía WhatsApp:</p>
+          <a href="https://wa.me/34633758117" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-white font-semibold hover:text-brand-400 transition-colors">
+            <i data-lucide="phone" class="w-4 h-4 text-brand-500"></i>
+            <span>+34 633 75 81 17</span>
+          </a>
         </div>
 
       </div>
 
-      <div class="mt-12 pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-        <p>&copy; <span id="current-year"></span> Alex Figueras Ruiz. Todos los derechos reservados.</p>
-        <p class="text-[11px]">Colegiado Nº 19.190</p>
+      <div class="mt-12 pt-8 border-t border-slate-800 text-xs text-slate-500 text-center">
+        © 2026 Alex Figueras Ruiz. Todos los derechos reservados.
       </div>
     </div>
   </footer>
 
-  <!-- Scripts funcionales -->
+  <!-- Inicialización de Iconos y Menú Móvil -->
   <script>
-    // Inicializar iconos
     lucide.createIcons();
 
-    // Año actual automático
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-
-    // Toggle menú móvil
-    const mobileBtn = document.getElementById('mobile-toggle');
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
-    if (mobileBtn && mobileMenu) {
-      mobileBtn.addEventListener('click', () => {
+
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
       });
-      // Cerrar al pulsar un enlace
+
       mobileMenu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
           mobileMenu.classList.add('hidden');
@@ -509,5 +431,6 @@
       });
     }
   </script>
+
 </body>
 </html>
