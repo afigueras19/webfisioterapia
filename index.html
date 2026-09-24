@@ -108,7 +108,7 @@
     <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-2 sm:py-3">
-                <!-- Logo con soporte de vista previa en vivo y fallback automático -->
+                <!-- Logo -->
                 <div class="flex items-center gap-3 py-1 group">
                     <a href="#inicio" class="flex items-center">
                         <img id="header-logo"
@@ -117,7 +117,7 @@
                              class="site-logo h-24 sm:h-28 md:h-36 lg:h-40 w-auto max-w-[320px] sm:max-w-sm md:max-w-md object-contain drop-shadow-sm group-hover:scale-[1.02] transition-transform duration-200" 
                              onerror="handleLogoError(this)">
                         
-                        <!-- Logotipo vectorial de alta fidelidad que se muestra en la vista previa si no encuentra el archivo local -->
+                        <!-- Logotipo vectorial fallback -->
                         <div id="header-logo-svg" class="hidden flex items-center gap-4 bg-gradient-to-r from-slate-50 to-brand-50/50 p-2.5 sm:p-3 rounded-2xl border border-brand-100 shadow-sm">
                             <div class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-brand-600 rounded-xl flex items-center justify-center text-white shadow-md shrink-0">
                                 <svg class="w-9 h-9 sm:w-12 sm:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -134,7 +134,7 @@
                 </div>
 
                 <!-- Navegación Escritorio -->
-                <nav class="hidden md:flex items-center gap-8">
+                <nav class="hidden md:flex items-center gap-7">
                     <a href="#inicio" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Inicio</a>
                     <a href="#artrosis" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Programa Artrosis Vital</a>
                     <a href="#guia-clinica" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Claves Artrosis</a>
@@ -143,14 +143,21 @@
                     <a href="#faq" class="text-slate-600 hover:text-brand-600 font-medium transition-colors">Dudas</a>
                 </nav>
 
-                <!-- Botón CTA WhatsApp Escritorio -->
-                <div class="hidden md:flex items-center">
+                <!-- Botones de Acción en Barra Superior -->
+                <div class="hidden md:flex items-center gap-3">
+                    <a href="https://calendly.com/hola-alexfiguerasfisio" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="inline-flex items-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-semibold px-4 py-2 rounded-full shadow-sm hover:shadow transition-all duration-200 text-sm">
+                        <i data-lucide="calendar" class="w-4 h-4"></i>
+                        <span>Reservar Valoración</span>
+                    </a>
                     <a href="https://wa.me/34601170526?text=Hola%20Alex,%20tengo%20artrosis%20de%20cadera%20y%20quisiera%20solicitar%20informaci%C3%B3n%20para%20una%20valoraci%C3%B3n%20online." 
                        target="_blank" 
                        rel="noopener noreferrer" 
-                       class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-5 py-2.5 rounded-full shadow-sm hover:shadow transition-all duration-200">
+                       class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-4 py-2 rounded-full shadow-sm hover:shadow transition-all duration-200 text-sm">
                         <i data-lucide="message-square" class="w-4 h-4"></i>
-                        <span>Contactar por WhatsApp</span>
+                        <span>WhatsApp</span>
                     </a>
                 </div>
 
@@ -171,13 +178,22 @@
             <a href="#experiencia" class="block py-2 text-slate-700 font-medium">Sobre Mí</a>
             <a href="#metodo" class="block py-2 text-slate-700 font-medium">Método Online</a>
             <a href="#faq" class="block py-2 text-slate-700 font-medium">Dudas</a>
-            <a href="https://wa.me/34601170526?text=Hola%20Alex,%20tengo%20artrosis%20de%20cadera%20y%20quisiera%20solicitar%20informaci%C3%B3n%20para%20una%20valoraci%C3%B3n%20online." 
-               target="_blank" 
-               rel="noopener noreferrer" 
-               class="flex items-center justify-center gap-2 bg-emerald-600 text-white font-semibold py-3 rounded-xl w-full">
-                <i data-lucide="message-square" class="w-5 h-5"></i>
-                <span>WhatsApp Directo</span>
-            </a>
+            <div class="pt-2 space-y-2">
+                <a href="https://calendly.com/hola-alexfiguerasfisio" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="flex items-center justify-center gap-2 bg-brand-600 text-white font-semibold py-3 rounded-xl w-full shadow-sm">
+                    <i data-lucide="calendar" class="w-5 h-5"></i>
+                    <span>Reservar Valoración Online</span>
+                </a>
+                <a href="https://wa.me/34601170526?text=Hola%20Alex,%20tengo%20artrosis%20de%20cadera%20y%20quisiera%20solicitar%20informaci%C3%B3n%20para%20una%20valoraci%C3%B3n%20online." 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="flex items-center justify-center gap-2 bg-emerald-600 text-white font-semibold py-3 rounded-xl w-full">
+                    <i data-lucide="message-square" class="w-5 h-5"></i>
+                    <span>WhatsApp Directo</span>
+                </a>
+            </div>
         </div>
     </header>
 
@@ -216,17 +232,21 @@
                         </div>
                     </div>
 
+                    <!-- Botones de Acción Hero -->
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-                        <a href="https://wa.me/34601170526?text=Hola%20Alex,%20tengo%20artrosis%20de%20cadera%20y%20quisiera%20reservar%20una%20valoraci%C3%B3n." 
+                        <a href="https://calendly.com/hola-alexfiguerasfisio" 
                            target="_blank" 
                            rel="noopener noreferrer" 
-                           class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5">
-                            <i data-lucide="message-circle" class="w-5 h-5"></i>
-                            <span>Valorar mi Caso por WhatsApp</span>
+                           class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-600 hover:bg-brand-700 text-white font-bold text-base px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5">
+                            <i data-lucide="calendar" class="w-5 h-5"></i>
+                            <span>Reservar Valoración Online</span>
                         </a>
-                        <a href="#artrosis" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-slate-700 font-semibold text-base px-6 py-4 rounded-xl border border-slate-300 shadow-sm transition-all">
-                            <span>Programa Artrosis Vital</span>
-                            <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                        <a href="https://wa.me/34601170526?text=Hola%20Alex,%20tengo%20artrosis%20de%20cadera%20y%20quisiera%20consultar%20mi%20caso." 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base px-6 py-4 rounded-xl shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                            <span>Consultar por WhatsApp</span>
                         </a>
                     </div>
                 </div>
@@ -273,12 +293,12 @@
                             </div>
 
                             <div class="bg-brand-50 p-4 rounded-xl border border-brand-200 text-center">
-                                <p class="text-xs text-brand-900 font-medium">¿Quieres saber cómo adaptar el ejercicio a tu grado de artrosis de cadera?</p>
-                                <a href="https://wa.me/34601170526?text=Hola%20Alex,%20quiero%20saber%20c%C3%B3mo%20adaptar%20el%20ejercicio%20a%20mi%20artrosis%20de%20cadera." 
+                                <p class="text-xs text-brand-900 font-medium">¿Quieres reservar directamente tu sesión de valoración?</p>
+                                <a href="https://calendly.com/hola-alexfiguerasfisio" 
                                    target="_blank" 
                                    rel="noopener noreferrer" 
                                    class="inline-block mt-2 text-xs font-bold text-brand-700 hover:text-brand-900 underline">
-                                    Hablar directamente con Alex por WhatsApp &rarr;
+                                    Elegir día y hora en la agenda &rarr;
                                 </a>
                             </div>
                         </div>
@@ -359,13 +379,21 @@
                             </div>
                         </div>
 
-                        <div class="pt-4">
+                        <!-- Botones de Acción en PAV -->
+                        <div class="pt-4 flex flex-wrap gap-4">
+                            <a href="https://calendly.com/hola-alexfiguerasfisio" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="inline-flex items-center gap-3 bg-brand-500 hover:bg-brand-600 text-white font-bold text-base px-8 py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5">
+                                <i data-lucide="calendar" class="w-5 h-5"></i>
+                                <span>Reservar Valoración Online</span>
+                            </a>
                             <a href="https://wa.me/34601170526?text=Hola%20Alex,%20quiero%20informaci%C3%B3n%20sobre%20el%20Programa%20Artrosis%20Vital%20(PAV)." 
                                target="_blank" 
                                rel="noopener noreferrer" 
-                               class="inline-flex items-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-base px-8 py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5">
+                               class="inline-flex items-center gap-3 bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-base px-7 py-4 rounded-xl shadow-lg transition-all transform hover:-translate-y-0.5">
                                 <i data-lucide="message-circle" class="w-5 h-5"></i>
-                                <span>Consultar sobre el Programa Artrosis Vital</span>
+                                <span>Consultar por WhatsApp</span>
                             </a>
                         </div>
                     </div>
@@ -406,7 +434,7 @@
         </div>
     </section>
 
-    <!-- GUÍA CLÍNICA: P&R Clínicas Directas sobre Artrosis para Motores de IA y Pacientes -->
+    <!-- GUÍA CLÍNICA -->
     <section id="guia-clinica" class="py-16 bg-brand-50/50 border-y border-brand-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12">
@@ -518,12 +546,18 @@
                             </li>
                         </ul>
 
-                        <div class="pt-4">
+                        <div class="pt-4 flex flex-col sm:flex-row gap-3">
+                            <a href="https://calendly.com/hola-alexfiguerasfisio" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="flex-1 text-center bg-brand-600 hover:bg-brand-500 text-white font-bold py-3 px-4 rounded-xl transition-all">
+                                Reservar Cita Online
+                            </a>
                             <a href="https://wa.me/34601170526?text=Hola%20Alex,%20quiero%20conocer%20m%C3%A1s%20sobre%20el%20Programa%20Artrosis%20Vital." 
                                target="_blank" 
                                rel="noopener noreferrer" 
-                               class="block text-center bg-white hover:bg-slate-100 text-slate-900 font-bold py-3 px-6 rounded-xl transition-all">
-                                Hablar directamente con Alex Figueras
+                               class="flex-1 text-center bg-white hover:bg-slate-100 text-slate-900 font-bold py-3 px-4 rounded-xl transition-all">
+                                Escribir por WhatsApp
                             </a>
                         </div>
                     </div>
@@ -546,9 +580,12 @@
                 <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm relative">
                     <div class="w-10 h-10 bg-brand-600 text-white font-bold rounded-full flex items-center justify-center mb-6">1</div>
                     <h3 class="text-xl font-bold text-slate-900 mb-3">Valoración Clínica Inicial</h3>
-                    <p class="text-sm text-slate-600 leading-relaxed">
+                    <p class="text-sm text-slate-600 leading-relaxed mb-4">
                         Videollamada individual donde valoramos tus informes, radiografías y evaluamos tus patrones de movimiento e inquietudes diarias.
                     </p>
+                    <a href="https://calendly.com/hola-alexfiguerasfisio" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700 font-bold text-xs inline-flex items-center gap-1">
+                        Reservar en agenda &rarr;
+                    </a>
                 </div>
 
                 <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm relative">
@@ -613,11 +650,11 @@
 
                 <div class="border border-slate-200 rounded-xl overflow-hidden">
                     <button class="faq-btn w-full p-5 text-left font-bold text-slate-900 bg-slate-50 hover:bg-slate-100 flex justify-between items-center transition-colors">
-                        <span>¿Cómo puedo hablar con Alex para consultar mi caso de artrosis?</span>
+                        <span>¿Cómo puedo agendar mi valoración inicial?</span>
                         <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform duration-200"></i>
                     </button>
                     <div class="faq-content hidden p-5 text-sm text-slate-600 border-t border-slate-200 bg-white leading-relaxed">
-                        Puedes enviar un mensaje de WhatsApp directo haciendo clic en los botones de esta página o escribiendo al <strong>+34 601 17 05 26</strong>.
+                        Puedes seleccionar directamente el día y la hora que mejor te convenga a través de mi agenda de Calendly en el botón de reservar, o si lo prefieres, escribir un mensaje de WhatsApp directo al <strong>+34 601 17 05 26</strong>.
                     </div>
                 </div>
 
@@ -630,15 +667,22 @@
         <div class="max-w-5xl mx-auto px-4 text-center space-y-6">
             <h2 class="text-3xl sm:text-4xl font-bold tracking-tight">¿Hablamos sobre tu artrosis de cadera?</h2>
             <p class="text-emerald-100 text-base sm:text-lg max-w-2xl mx-auto">
-                Toma una actitud activa en tu recuperación con el Programa Artrosis Vital (PAV). Consulta directamente con Alex Figueras Ruiz a través de WhatsApp.
+                Toma una actitud activa en tu recuperación con el Programa Artrosis Vital (PAV). Reserva tu sesión de valoración o consulta tus dudas por WhatsApp.
             </p>
-            <div>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://calendly.com/hola-alexfiguerasfisio" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-white hover:bg-slate-100 text-slate-900 font-bold text-base px-8 py-4 rounded-xl shadow-lg transition-all transform hover:scale-105">
+                    <i data-lucide="calendar" class="w-5 h-5 text-brand-600"></i>
+                    <span>Reservar Valoración Online</span>
+                </a>
                 <a href="https://wa.me/34601170526?text=Hola%20Alex,%20quisiera%20consultar%20mi%20caso%20de%20artrosis%20de%20cadera%20y%20el%20Programa%20Artrosis%20Vital." 
                    target="_blank" 
                    rel="noopener noreferrer" 
-                   class="inline-flex items-center gap-3 bg-white hover:bg-emerald-50 text-emerald-800 font-bold text-lg px-8 py-4 rounded-xl shadow-lg transition-all transform hover:scale-105">
-                    <i data-lucide="message-square" class="w-6 h-6"></i>
-                    <span>Contactar por WhatsApp (+34 601 17 05 26)</span>
+                   class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-emerald-800 hover:bg-emerald-900 text-white font-bold text-base px-8 py-4 rounded-xl shadow-lg transition-all transform hover:scale-105 border border-emerald-700">
+                    <i data-lucide="message-square" class="w-5 h-5"></i>
+                    <span>Contactar por WhatsApp</span>
                 </a>
             </div>
         </div>
@@ -674,8 +718,12 @@
                 <p class="text-xs text-slate-500 mt-2">Centrado en Artrosis de Cadera (Coxartrosis).</p>
             </div>
             <div class="md:text-right space-y-3">
-                <p class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Contacto & Redes</p>
+                <p class="text-xs font-semibold text-slate-300 uppercase tracking-wider">Contacto & Citas</p>
                 <div class="flex flex-col md:items-end gap-2 text-xs">
+                    <a href="https://calendly.com/hola-alexfiguerasfisio" target="_blank" rel="noopener noreferrer" class="text-brand-400 hover:text-brand-300 font-semibold inline-flex items-center gap-2 transition-colors">
+                        <i data-lucide="calendar" class="w-4 h-4 shrink-0"></i>
+                        <span>Reservar sesión en Calendly</span>
+                    </a>
                     <a href="https://wa.me/34601170526" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 font-semibold inline-flex items-center gap-2 transition-colors">
                         <i data-lucide="message-circle" class="w-4 h-4 shrink-0"></i>
                         <span>+34 601 17 05 26</span>
@@ -720,7 +768,6 @@
 
         // Gestor independiente para el logo secundario / pie de página
         function handleFooterLogoError(img) {
-            // Intenta cargar primero el isotipo/favicon de la marca si no existe logo-footer.png
             if (!img.dataset.triedFavicon) {
                 img.dataset.triedFavicon = 'true';
                 img.src = 'favicon.png';
