@@ -783,15 +783,22 @@
             if (footerFallback) footerFallback.classList.remove('hidden');
         }
 
-        // Menú Móvil
-        const menuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
+        // Menú Móvil con cierre automático al pulsar un enlace
+const menuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
 
-        if (menuBtn && mobileMenu) {
-            menuBtn.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-        }
+if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Cierra el menú al tocar cualquier titular o botón del menú desplegable
+    mobileMenu.querySelectorAll('a').forEach(enlace => {
+        enlace.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+}
 
         // Interacción FAQ (Acordeón)
         document.querySelectorAll('.faq-btn').forEach(button => {
